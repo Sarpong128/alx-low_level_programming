@@ -8,9 +8,18 @@
 
 int main(void)
 {
-	for (int i = 0; i < 16; i++)
+	int x;
+	char c;
+
+	for (x = 48; x < 58; x++)
 	{
-		printf("%x\n", i);
-        }
-	return 0;
+		putchar(x);
+	}
+
+	for (c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
+	return (0);
 }
