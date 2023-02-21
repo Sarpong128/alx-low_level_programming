@@ -1,22 +1,22 @@
 #include "main.h"
-
 /**
- * main - Print "_putchar" followed by a new line.
- * You are not allowed to include standard libraries.
- * Return: 0
+ * main - Program entry point
+ *
+ * Description: This is a program that will print the
+ * the message "_putchar"
+* Return: Always 0 (If Successful)
  */
-
 int main(void)
 {
-	char myVar[] = "_putchar";
-	int i = 0;
-
-	while (myVar[i] != '\0')
-	{
-		_putchar(myVar[i]);
-		i++;
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 
 	return (0);
-
+}
