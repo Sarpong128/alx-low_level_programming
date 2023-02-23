@@ -14,4 +14,4 @@ void print_numbers(void)
 		_putchar(x + '0');
 	}
 
-
+}
