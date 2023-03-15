@@ -1,1 +1,1 @@
-Solution to Static libraries tasks
+Static Librabries
