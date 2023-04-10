@@ -1,1 +1,1 @@
-Solutions to tasks on Function pointers
+Solutions to C Programming Task
