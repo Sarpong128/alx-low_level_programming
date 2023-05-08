@@ -11,39 +11,39 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
-        int fd;
-        int n_letters;
-        int rwr;
+	int fd;
+	int n_letters;
+	int rwr;
 
-        if (filename == NULL)
-        {
-                return (-1);
-        }
+	if (filename == NULL)
+	{
+		return (0);
+	}
 
-        fd = open(filename, O_WRONLY | O_APPEND);
+	fd = open(filename, O_WRONLY | O_APPEND);
 
-        if (fd == -1)
-        {
-                return (-1);
-        }
+	if (fd == -1)
+	{
+		return (-1);
+	}
 
-        if (text_content)
-        {
-                n_letters = 0;
-                while (text_content[n_letters] != '\0')
-                {
-                        n_letters++;
-                }
+	if (text_content)
+	{
+		n_letters = 0;
+		while (text_content[n_letters] != '\0')
+		{
+			n_letters++;
+		}
 
-                rwr = write(fd, text_content, n_letters);
+		rwr = write(fd, text_content, n_letters);
 
-                if (rwr == -1)
-                {
-                        return (-1);
-                }
-        }
+		if (rwr == -1)
+		{
+			return (0);
+		}
+	}
 
-        close(fd);
+	close(fd);
 
-        return (1);
+	return (0);
 }
