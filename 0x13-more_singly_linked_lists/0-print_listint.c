@@ -11,13 +11,13 @@ i#include "lists.h"
 size_t print_listint(const listint_t *h)
 {
 	size_t nodes = 0;
-	const listint_t *cursor = h;
 
-	while (cursor != NULL)
+
+	while (h != NULL)
 	{
-		printf("%d\n", cursor->n);
+		printf("%d\n", h->n);
 		nodes += 1;
-		cursor = cursor->next;
+		h =h->next;
 	}
 	return (nodes);
 }
