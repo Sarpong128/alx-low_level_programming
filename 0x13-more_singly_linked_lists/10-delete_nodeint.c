@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /**
+ *
  * delete_nodeint_at_index - deletes a node at a given situation
  * @head: pointat the start of linked list
  * @index: index to be deleted
