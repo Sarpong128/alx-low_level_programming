@@ -1,1 +1,1 @@
-Solution to tasks on file I/O
+Solutions to file io
